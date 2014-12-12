@@ -13,8 +13,11 @@ Feature: I would like to edit oceans
 
   Examples:
     |    ocean            | length |
-    | Example The Nile    | 7182   |
-    | Example The Vistula | 1122   |
+    | Pacific Ocean    | 7182   |
+    | Atlantic Ocean | 1122   |
+    | Indian Ocean | 2428 |
+    | Arctic Ocean| 1872 |
+    | Southern Ocean aka Antarctic Ocean | 4465 |
 
 
   Scenario Outline: Edit records
@@ -33,7 +36,7 @@ Feature: I would like to edit oceans
 
   Examples:
     |  old-ocean        |    new-ocean    | new-length |
-    | Example The Nile  | EDITED The Nile | 911        |
+    | Indian Ocean  | Antarctic Ocean | 4465 |
 
 
 
@@ -47,5 +50,5 @@ Feature: I would like to edit oceans
 
   Examples:
     |  ocean              |
-    | Example The Vistula |
-    | EDITED The Nile     |
+    | Atlantic Ocea |
+    | Southern Ocean aka Antarctic Ocean     |
