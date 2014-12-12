@@ -2,9 +2,9 @@
 
 {% block body -%}
     <h1>Channel creation</h1>
-
-{{ form_start(form) }}
-
+    
+    {{ form(form) }}
+    
     {{ form_errors(form) }}
 
     <div class="form-group">
@@ -30,7 +30,7 @@
     </div>
 
 {{ form_end(form) }}
-
+    
         <ul class="record_actions">
     <li>
         <a href="{{ path('channel') }}">
