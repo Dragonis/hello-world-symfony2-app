@@ -3,23 +3,23 @@
 {% block body -%}
     <h1>Channel creation</h1>
     
-    {{ form(form) }}
-    
+    {{ form_start(form) }}
+   
     {{ form_errors(form) }}
 
     <div class="form-group">
-        {{ form_errors(form.name) }}
-        {{ form_label(form.name, 'Name', {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+        {{ form_errors(form.channel) }}
+        {{ form_label(form.channel, 'Name', {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
         <div class="col-sm-10">
-            {{ form_widget(form.name, {'attr': {'class': 'form-control'}}) }}
+            {{ form_widget(form.channel, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
 
     <div class="form-group">
-        {{ form_errors(form.depth) }}
-        {{ form_label(form.depth, 'Depth', {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
+        {{ form_errors(form.length) }}
+        {{ form_label(form.length, 'Depth', {'label_attr': {'class': 'col-sm-2 control-label'}}) }}
         <div class="col-sm-10">
-            {{ form_widget(form.depth, {'attr': {'class': 'form-control'}}) }}
+            {{ form_widget(form.length, {'attr': {'class': 'form-control'}}) }}
         </div>
     </div>
 
