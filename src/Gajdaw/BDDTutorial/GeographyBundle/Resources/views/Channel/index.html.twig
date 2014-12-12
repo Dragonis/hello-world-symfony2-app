@@ -3,7 +3,7 @@
 {% block body -%}
     <h1>Channel list</h1>
 
-    <table class="records_list">
+    <table class="table table-striped">
         <thead>
             <tr>
                 <th>Id</th>
@@ -15,6 +15,7 @@
         <tbody>
         {% for entity in entities %}
             <tr>
+                <td>{{ loop.index }}.</td>
                 <td><a href="{{ path('channel_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
                 <td><a href="{{ path('channel_show', { 'id': entity.id }) }}">{{ entity.channel }}</a></td>
                 <td>{{ entity.length }}</td>
@@ -27,6 +28,8 @@
                         <a href="{{ path('channel_edit', { 'id': entity.id }) }}">edit</a>
                     </li>
                 </ul>
+                <a href="{{ path('channel_show', { 'id': entity.id }) }}" class="btn btn-default" role="button">show</a>
+                <a href="{{ path('channel_edit', { 'id': entity.id }) }}" class="btn btn-default" role="button">edit</a>  
                 </td>
             </tr>
         {% endfor %}
