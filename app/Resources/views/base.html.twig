@@ -77,7 +77,15 @@
             <!-- countries -->
             
             <!-- channels -->
-            <li><a href="{{ path('channel') }}">Channels</a></li>
+            <li role="presentation" class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="{{ path('channel') }}" role="button" aria-expanded="false">
+                    Channels <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="{{ path('channel') }}">list</a></li>
+                    <li><a href="{{ path('channel_new') }}">create new</a></li>
+                </ul>
+            </li>
             <!-- channels -->
             
             <!-- cities -->
