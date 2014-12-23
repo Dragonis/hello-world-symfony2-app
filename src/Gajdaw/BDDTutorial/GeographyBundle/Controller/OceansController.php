@@ -9,7 +9,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class OceansController extends Controller
 {
     /**
-     * @Route("/geography/oceans/pacific.html")
+     * @Route("/geography/oceans/pacific.html", name="geography-oceans-pacific")
      * @Template()
      */
     public function pacificAction()
