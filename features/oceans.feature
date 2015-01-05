@@ -13,8 +13,8 @@ Feature: I would like to edit oceans
 
   Examples:
     |    ocean            | length |
-    | Example The Nile    | 7182   |
-    | Example The Vistula | 1122   |
+    | Ocean Pacific    | 7182   |
+    | Ocean Atlantic | 1122   |
 
 
   Scenario Outline: Edit records
@@ -33,7 +33,7 @@ Feature: I would like to edit oceans
 
   Examples:
     |  old-ocean        |    new-ocean    | new-length |
-    | Example The Nile  | EDITED The Nile | 911        |
+    | Ocean Pacific  | EDITED Ocean Indian | 911        |
 
 
 
@@ -46,6 +46,6 @@ Feature: I would like to edit oceans
      And I should not see "<ocean>"
 
   Examples:
-    |  ocean              |
-    | Example The Vistula |
-    | EDITED The Nile     |
+    |  ocean  |
+    | EDITED Ocean Indian |
+    | Ocean Atlantic |
